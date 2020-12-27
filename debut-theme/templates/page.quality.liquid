@@ -1,0 +1,198 @@
+<div class="page-width page-quality">
+
+  <div class="grid">
+
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+      
+      <div class="rte">
+        <!-- {{ page.content }} -->
+
+        <div class="quality__desc">
+
+          <div class="manufacturing">
+       
+            <div class="manu__content">
+      
+              <div class="manu__content__wrapper">
+
+                <div class="quality__quote">
+                  <q> At Nature’s Nutra, we promise to provide you with the best quality products that meet all regulatory and health standards, and our most important priority is your satisfaction. To fulfill these promises, all our products are manufactured in the facilities that are certified GMP, and use only premium raw materials from the world's leading and reputable raw material suppliers.</q>
+              </div>
+
+               <div class="manu__text">
+
+                <h3>Manufacturing</h3>
+                <p>
+                  Nature’s Nutra offers nutritional products that are manufactured and packaged to meet FDA and cGMP standards. 
+                  <br>
+                  We work closely with our manufacturers in order to: 
+                </p>
+              
+    
+                  <ul>
+                    <li class="manu__text__content">Maintain consistent dependability and adherence to industry standards to produce only the <strong>safest and highest quality products</strong> for your loved ones.</li>
+                  
+                    <li class="manu__text__content">All raw materials and packaging materials undergo stringent <strong>quality control at each stage</strong> of the production process.</li>
+                  
+                    <li class="manu__text__content">Our well-trained team of quality control specialists monitor all processes to ensure <strong>tight adherence to all production standards</strong>.</li>
+                  </ul>
+        
+               </div> 
+                     
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="quality__text">
+
+             
+             <h4>Nature’s Nutra offers nutritional products that are manufactured and packaged to meet FDA and cGMP standards.</h4>
+
+             <div class="certification">
+               <div class="certification-img"><img src="https://www.dropbox.com/s/an9ugsewjshn57k/FDA.png?raw=1" alt=""></div>
+               <div class="certification-img"><img src="https://www.dropbox.com/s/98vohitb7jvva0x/NSF%20Logo.png?raw=1" alt=""></div>
+               <div class="certification-img"><img src="https://www.dropbox.com/s/knvzloj9bslc9b4/GMP.png?raw=1" alt=""></div>
+               <div class="certification-img"><img src="https://www.dropbox.com/s/8u58eguzpfea5iv/Made%20In%20USA.png?raw=1" alt=""></div>
+               <div class="certification-img"><img src="https://www.dropbox.com/s/j3uly6cfjw9t2cn/USDA%20Organic.png?raw=1" alt=""></div>
+             </div>
+          </div>
+
+
+          <div class="manu__video">
+         
+            <div class="manu__video__content">
+              <iframe
+              src="https://www.youtube.com/embed/jYwVFhrJDCk?autoplay=1&mute=1">
+              </iframe>
+            </div>
+      
+          </div>
+         
+         
+
+         </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  
+  <style>
+
+    .section-header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.dropbox.com/s/s78s694u0phd119/Bottling%20Line.png?raw=1");
+      height: 250px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section-header h1 {
+      color: white;
+      text-shadow: 1px 1px black;
+    }
+    .quality_text {
+      margin: 2% 0;
+    }
+      .quality__text h4 {
+        text-align: center;
+      }
+    .quality__quote {
+      text-align: center;
+      padding: 2% 10%;
+      margin: 2%;
+      font-weight: bold;
+      color: #EB7B2C;
+      border-left: 2px solid #70BB2B;
+    }
+
+      .certification {
+        display: flex;
+        justify-content: space-around;
+      }
+        .certification img {
+          width: 100px;
+        }
+          .certification img:hover {
+            animation: flip 1.5s linear;
+          }
+            @keyframes flip {
+              0% { transform: rotate(0deg)}
+              100% {transform: rotateY(360deg)}
+            }
+
+
+    .manufacturing {
+      margin: 5% 0;
+      display: flex;
+      flex-direction: column;
+    }
+      .manu__content {
+      }
+        .manu__content h3 {
+          text-align: center;
+        }
+          .manu__text {
+            border-bottom: 2px solid #70BB2B;
+            margin: 3% 0;
+          }
+            .manu__text__content {
+              /* background-color: white; */
+              /* font-size: 1.5rem; */
+              /* color: white; */
+              /* font-style: italic;
+              text-align: center; */
+              padding: 2%;
+              margin-top: 1rem;
+              transition: 1s;
+            }
+              /* .manu__text__content:hover {
+                transform: scale(1.8);
+                z-index: 999999999;
+              } */
+              .slick-list.draggable {
+                height: 250px;
+              }
+              .slick-track {
+                height: 250px;
+              }
+              .manu__text__content.slick-slide {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://www.dropbox.com/s/kttpct5c2c7akfy/Bottling%20Line%20JPEG.jpg?raw=1");
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin-top: 0% !important;
+                padding: 1.2% !important;
+              }
+              .manu__text__content.slick-slide.slick-cloned {
+                margin-top: 0% !important;
+                padding: 1.2% !important;
+              }
+              .manu__text__content.slick-slide.slick-current.slick-active {
+                padding: 1.2% !important;
+                margin-top: 0% !important;
+              }
+
+
+    .manu__video__content {
+      display: flex;
+      justify-content: center;
+      margin-top: 10%;
+    }
+
+    
+
+
+
+  </style>
+</div>

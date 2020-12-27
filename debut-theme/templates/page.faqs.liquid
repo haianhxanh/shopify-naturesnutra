@@ -1,0 +1,189 @@
+<div class="page-width page-faqs">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      <div class="rte">
+
+        <div id="faqs">
+
+          <div class="toggle-btn">
+            <button class="btn show-btn">Show all</button>
+            <button class="btn hide-btn">Hide all</button>
+          </div>
+          
+          <style>
+
+            .section-header {
+              height: 250px;
+              background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('https://www.dropbox.com/s/rneck0qnt3ncsbj/Happy%20Family%20JPEG.jpg?raw=1');
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: 10%;
+
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+
+            .section-header h1 {
+              color: black;
+              text-shadow: 1px 1px white;
+            }
+
+            #faqs {
+              display: flex;
+              flex-direction: column;
+              outline: 0;
+              box-sizing: border-box;
+            }
+
+            .hide {
+              display: none;
+            }
+
+            .faqs {
+              margin: 0.5rem 0;
+            }
+              .faqs__container {
+                display: flex;
+                flex-direction: column;
+                transition: 0.4s;
+              }
+                .faqs__question {
+                  width: 100%;
+                  padding: 0.5rem 0;
+                  background-color: #FAE3C7;
+                  border-bottom: 1px solid #EB7B2C !important;
+                  box-shadow: 1px 1px 5px rgba(0,0,0,0.25);
+                }
+                .faqs__question:hover {
+                  cursor: pointer;
+                  background-color: #EB7B2C;
+                  color: #FAE3C7 !important;
+                }
+              .faqs__answer {
+                transition: 0.5s ease-out;
+              }
+          </style>
+
+        </div>
+
+        <script>
+          const faqs = [
+            {
+              id: 1,
+              question: " WHERE ARE THE PRODUCTS MADE?",
+              answer: " All of our products are made in the U.S.A"
+            },
+            {
+              id: 2,
+              question: "HOW LONG IS THE SHELF LIFE?",
+              answer: "The shelf life of an unopened bottle is 2 years."
+            },
+            {
+              id: 3,
+              question: "WHEN DOES THE PRODUCT EXPIRE?",
+              answer: "We make sure to send you products that still have minimum 1 year shelf life so all the products are still fresh and have ample time for consumption."
+            },
+            {
+              id: 4,
+              question: "DO THE PRODUCTS NEED TO BE REFRIGERATED?",
+              answer: "There is no need to be refrigerated before/after opening. Once open, consume within a 2 month period for best results."
+            },
+            {
+              id: 5,
+              question: "HOW MANY SERVINGS DOES EACH BOTTLE HAVE?",
+              answer: "Most of our products typically have 60 servings per bottle or 2 months of supply."
+            },
+            {
+              id: 6,
+              question: "WHAT ARE YOUR SHIPPING COSTS?",
+              answer: "Standard shipping is free anywhere in the continental USA."
+            },
+            {
+              id: 7,
+              question: "DO YOU SHIP INTERNATIONALLY?",
+              answer: "We no longer support international shipment. Sorry for the inconvenience. Thank you for understanding."
+            },
+            {
+              id: 8,
+              question: "WHAT IS YOUR REFUND POLICY?",
+              answer: "We are committed to a worry free shopping experience. If you are unhappy with the product, we will provide you a full refund."
+            },
+            {
+              id: 9,
+              question: "DO THE PRODUCTS STAIN TEETH?",
+              answer: "No, all of our products do not stain teeth."
+            },
+            {
+              id: 10,
+              question: "CAN THE DROPS BE ADDED TO WATER / JUICE?",
+              answer: "Yes, the drops can be added to water and/or juice for consumption."
+            },
+            {
+              id: 11,
+              question: "DO THE PRODUCTS HAVE FLAVOR?",
+              answer: "No, all of our products are flavorless."
+            }
+          ]
+
+            let data;
+
+            data = faqs;
+
+            const parentDiv = document.querySelector('#faqs');
+
+            let i;
+            
+            for (i = 0; i < data.length; i++) {
+              const content = document.createElement("div");
+              content.classList.add('faqs');
+              content.innerHTML = `
+
+                <div class="faqs__container">
+                  <a class="faqs__question" id="q-${data[i].id}">
+                    Q: ${data[i].question}
+                  </a>
+
+                  <div class="hide faqs__answer" id="a-${data[i].id}">
+                    <p>
+                      A: ${data[i].answer}
+                    </p>
+                  </div>
+
+              </div>
+              
+              `
+              parentDiv.appendChild(content);
+            }
+
+            const showBtn = document.querySelector('.show-btn');
+            const hideBtn = document.querySelector('.hide-btn');
+
+            // const defaultElm = document.querySelector('#a-1');
+            // defaultElm.classList.remove('hide');
+
+            for (i = 0; i < data.length; i++) {
+              const question = document.querySelector(`#q-${data[i].id}`);
+              const answer = document.querySelector(`#a-${data[i].id}`);
+              question.addEventListener('click', () => {
+                answer.classList.toggle('hide');
+              })
+
+              showBtn.addEventListener('click', () => {
+                answer.classList.remove('hide');
+              })
+
+              hideBtn.addEventListener('click', () => {
+                answer.classList.add('hide');
+              })
+            }
+        </script>
+
+      </div>
+    </div>
+  </div>
+</div>

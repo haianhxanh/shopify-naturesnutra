@@ -1,0 +1,280 @@
+<div class="featured-products">
+
+  {% if section.settings.title != blank %}
+  <div class="section-header text-center">
+    <h2>{{ section.settings.title | escape }}</h2>
+  </div>
+  {% endif %}
+
+  <div class="page-width">
+
+    <ul class="container featured-products-slider">
+
+          <li class="container-item">
+            <div class="container-item product-card">
+
+              <a class="container-item__link" href="https://naturesnutra.myshopify.com/collections/all-products/products/strong-calcium">
+                
+                <div class="product-image"><img src="https://www.dropbox.com/s/dzj71oartqd1023/NN-2%20Calcium.png?raw=1" alt="Strong Calcium"></div>
+
+              </a>
+            </div>
+
+            <div class="product-title"><p>Strong Calcium</p></div>
+          </li>
+
+          <li class="container-item">
+            <div class="container-item product-card">
+              <a class="container-item__link" href="https://naturesnutra.myshopify.com/collections/all-products/products/vegetarian-dha">          
+           
+                <div class="product-image"><img src="https://www.dropbox.com/s/mu7beo6pip028h6/NN-4%20DHA.png?raw=1" alt="Vegetarian DHA"></div>
+
+              </a>
+            </div>
+            <div class="product-title"><p>Vegetarian DHA</p></div>
+          </li>
+
+          <li class="container-item">
+            <div class="container-item product-card">
+              <a class="container-item__link" href="https://naturesnutra.myshopify.com/collections/all-products/products/dynamic-vita">
+         
+                <div class="product-image"><img src="https://www.dropbox.com/s/sqjwm4svuzazgro/NND-1%20Dynamic%20Vita%20AD%20Drops.png?raw=1" alt="Dynamic Vita A and D Drops"></div>
+
+              </a>
+            </div>
+            <div class="product-title"><p>Dynamic Vita A&D Drops</p></div>
+          </li>
+
+          <li class="container-item">
+            <div class="container-item product-card">
+              <a class="container-item__link"         href="https://naturesnutra.myshopify.com/collections/all-products/products/happy-zinc">
+
+                <div class="product-image"><img src="https://www.dropbox.com/s/gmsi6huz899fh70/NN-7%20Zinc.png?raw=1" alt="Happy Zinc"></div>
+
+              </a>
+
+            </div>
+            <div class="product-title"><p>Happy Zinc</p></div>
+          </li>
+
+          <li class="container-item">
+            <div class="container-item product-card">
+              <a class="container-item__link" href="https://naturesnutra.myshopify.com/collections/all-products/products/easy-iron">
+              
+                <div class="product-image"><img src="https://www.dropbox.com/s/0wvwkqo6ymc0a0f/NN-6%20Iron.png?raw=1" alt="Easy Iron"></div>
+              </a>
+
+            </div>
+            <div class="product-title"><p>Easy Iron</p></div>
+          </li>
+    </ul>
+  
+
+      <div class="text-center">
+        <a href="https://naturesnutra.com/collections/all-products" class="btn">
+          View All
+        </a>
+      </div>
+  </div>
+
+  <style>
+    .featured-products .page-width {
+      background-image: url('https://www.dropbox.com/s/7fg3vep5pqyzmtq/featured-products-bg-w-opacity.svg?raw=1');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .product-title p {
+      font-weight: bold;
+
+    }
+  </style>
+
+</div> 
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Propagovaná kolekce",
+    "da": "Udvalgt kollektion",
+    "de": "Vorgestellte Kategorie",
+    "en": "Featured products",
+    "es": "Colección destacada",
+    "fi": "Esittelyssä oleva kokoelma",
+    "fr": "Collection en vedette",
+    "it": "Collezione in evidenza",
+    "ja": "特集コレクション",
+    "ko": "추천 컬렉션",
+    "nb": "Utvalgt samling",
+    "nl": "Uitgelichte collectie",
+    "pl": "Polecana kolekcja",
+    "pt-BR": "Coleção em destaque",
+    "pt-PT": "Coleção em destaque",
+    "sv": "Utvald kollektion",
+    "th": "คอลเลกชันแนะนำ",
+    "tr": "Öne çıkan koleksiyon",
+    "vi": "Bộ sưu tập nổi bật",
+    "zh-CN": "特色产品系列",
+    "zh-TW": "精選商品系列"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": {
+        "cs": "Nadpis",
+        "da": "Overskrift",
+        "de": "Titel",
+        "en": "Heading",
+        "es": "Título",
+        "fi": "Otsake",
+        "fr": "En-tête",
+        "it": "Heading",
+        "ja": "見出し",
+        "ko": "제목",
+        "nb": "Overskrift",
+        "nl": "Kop",
+        "pl": "Nagłówek",
+        "pt-BR": "Título",
+        "pt-PT": "Título",
+        "sv": "Rubrik",
+        "th": "ส่วนหัว",
+        "tr": "Başlık",
+        "vi": "Tiêu đề",
+        "zh-CN": "标题",
+        "zh-TW": "標題"
+      },
+      "default": {
+        "cs": "Propagovaná kolekce",
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Featured collection",
+        "es": "Colección destacada",
+        "fi": "Esittelyssä oleva kokoelma",
+        "fr": "Collection en vedette",
+        "it": "Collezione in evidenza",
+        "ja": "特集コレクション",
+        "ko": "추천 컬렉션",
+        "nb": "Fremhevet samling",
+        "nl": "Uitgelichte collectie",
+        "pl": "Polecana kolekcja",
+        "pt-BR": "Coleção em destaque",
+        "pt-PT": "Coleção em destaque",
+        "sv": "Utvald kollektion",
+        "th": "คอลเลกชันแนะนำ",
+        "tr": "Öne çıkan koleksiyon",
+        "vi": "Bộ sưu tập nổi bật",
+        "zh-CN": "特色产品系列",
+        "zh-TW": "精選商品系列"
+      }
+    },
+    {
+      "id": "collection",
+      "type": "collection",
+      "label": {
+        "cs": "Kolekce",
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection",
+        "es": "Colección",
+        "fi": "Kokoelma",
+        "fr": "Collection",
+        "it": "Collezione",
+        "ja": "コレクション",
+        "ko": "컬렉션",
+        "nb": "Samling",
+        "nl": "Collectie",
+        "pl": "Kolekcja",
+        "pt-BR": "Coleção",
+        "pt-PT": "Coleção",
+        "sv": "Produktserie",
+        "th": "คอลเลกชัน",
+        "tr": "Koleksiyon",
+        "vi": "Bộ sưu tập",
+        "zh-CN": "收藏",
+        "zh-TW": "商品系列"
+      }
+    },
+    {
+      "type": "checkbox",
+      "id": "show_view_all",
+      "label": {
+        "cs": "Zobrazit tlačítko Zobrazit vše",
+        "da": "Vis knappen \"Se flere\"",
+        "de": "'Alle anzeigen' Button anzeigen",
+        "en": "Show 'View all' button",
+        "es": "Mostrar el botón 'Ver todo'",
+        "fi": "Näytä \"Näytä kaikki\" -painike",
+        "fr": "Afficher le bouton “Tout voir”",
+        "it": "Mostra il pulsante \"Visualizza tutto\"",
+        "ja": "「すべて表示」ボタンを表示する",
+        "ko": "'모두 보기' 버튼 표시",
+        "nb": "Vis «Se alle»-knapp",
+        "nl": "Knop 'Alles weergeven' weergeven",
+        "pl": "Pokaż przycisk „Wyświetl wszystkie”",
+        "pt-BR": "Exibir botão 'Visualizar tudo'",
+        "pt-PT": "Mostrar botão 'Ver tudo'",
+        "sv": "Visa \"Visa alla\"-knappen",
+        "th": "แสดงปุ่ม 'ดูทั้งหมด'",
+        "tr": "\"Tümünü görüntüle\" düğmesini göster",
+        "vi": "Hiển thị nút \"Xem tất cả\"",
+        "zh-CN": "显示“查看全部”按钮",
+        "zh-TW": "顯示「檢視全部」按鈕"
+      },
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Propagovaná kolekce",
+        "da": "Udvalgt kollektion",
+        "de": "Vorgestellte Kategorie",
+        "en": "Featured collection",
+        "es": "Colección destacada",
+        "fi": "Esittelyssä oleva kokoelma",
+        "fr": "Collection en vedette",
+        "it": "Collezione in evidenza",
+        "ja": "特集コレクション",
+        "ko": "추천 컬렉션",
+        "nb": "Utvalgt samling",
+        "nl": "Uitgelichte collectie",
+        "pl": "Polecana kolekcja",
+        "pt-BR": "Coleção em destaque",
+        "pt-PT": "Coleção em destaque",
+        "sv": "Utvald kollektion",
+        "th": "คอลเลกชันแนะนำ",
+        "tr": "Öne çıkan koleksiyon",
+        "vi": "Bộ sưu tập nổi bật",
+        "zh-CN": "特色产品系列",
+        "zh-TW": "精選商品系列"
+      },
+      "category": {
+        "cs": "Kolekce",
+        "da": "Kollektion",
+        "de": "Kategorie",
+        "en": "Collection",
+        "es": "Colección",
+        "fi": "Kokoelma",
+        "fr": "Collection",
+        "it": "Collezione",
+        "ja": "コレクション",
+        "ko": "컬렉션",
+        "nb": "Samling",
+        "nl": "Collectie",
+        "pl": "Kolekcja",
+        "pt-BR": "Coleção",
+        "pt-PT": "Coleção",
+        "sv": "Produktserie",
+        "th": "คอลเลกชัน",
+        "tr": "Koleksiyon",
+        "vi": "Bộ sưu tập",
+        "zh-CN": "收藏",
+        "zh-TW": "商品系列"
+      }
+    }
+  ]
+}
+{% endschema %}

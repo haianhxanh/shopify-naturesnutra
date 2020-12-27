@@ -1,0 +1,30 @@
+/*============================================================================
+  Grid Breakpoints and Class Names
+    - Do not change the variable names
+    - Breakpoint pixel values are used in the window.theme.breakpoints object
+==============================================================================*/
+/*============================================================================
+  Generate breakpoint-specific column widths and push classes
+    - Default column widths: $grid-breakpoint-has-widths: ($small, $medium-up);
+    - Default is no push classes
+==============================================================================*/
+/*================ Color Variables ================*/
+:root {
+  --bisque: #FAE3C7;
+  --orange: #EB7B2C;
+  --green: #70BB2B;
+  --earth: #E7AC65;
+  --floral-white: #F9F6F1;
+  --shadow: rgb(27, 16, 16);
+}
+/*================ Sizing Variables ================*/
+/*================ Footer Variables ================*/
+/*================ Z-Index ================*/
+/*================ SVG ================*/
+/*================ Drawers ================*/
+/*================ Hero Slider ================*/
+/*================ Typography ================*/
+/*================ Gift Cards ================*/
+/*================ Z-index ================*/
+/*================ Product video ================*/
+/*================ Image placeholder ================*/
